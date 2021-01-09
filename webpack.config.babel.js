@@ -109,9 +109,7 @@ export default {
             errors: true
         },
         port: 8080,
-        open: {
-            app: ["Google Chrome Canary", "--auto-open-devtools-for-tabs"]
-        },
+        open:true,
         historyApiFallback: true
     }
 };
