@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "scripts": {
         "webpack": "webpack",
-        "dev": "node --require @babel/register ./node_modules/.bin/webpack serve --mode=development --devtool=source-map --hot",
-        "build": "node --require @babel/register ./node_modules/.bin/webpack --mode=production"
+        "dev": "webpack serve --mode=development --devtool=source-map --hot",
+        "build": "webpack --mode=production"
     },
     "dependencies": {
         "@babel/core": "^7.12.9",
