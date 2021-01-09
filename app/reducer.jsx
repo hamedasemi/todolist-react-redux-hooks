@@ -1,12 +1,12 @@
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'REMOVE-TODO':
-            state.todoList.splice(action.payload, 1);
+        case 'REMOVE-ITEM':
+            state.list.splice(action.payload, 1);
             return { ...state }
-        case 'ADD-TODO':
-            return { ...state, todoList: [...state.todoList, action.payload], todo: "" }
-        case 'SET-TODO':
-            return { ...state, todo: action.payload }
+        case 'ADD-ITEM':
+            return { ...state, list: [...state.list, action.payload], temp: "" }
+        case 'SET-TEMP':
+            return { ...state, temp: action.payload }
         default:
             return state;
     }
